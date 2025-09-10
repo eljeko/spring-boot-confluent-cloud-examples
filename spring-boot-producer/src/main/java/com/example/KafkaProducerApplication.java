@@ -12,7 +12,7 @@ import java.util.Locale;
 
 @SpringBootApplication
 @EnableScheduling
-public class KafkaUserProducerApplication {
+public class KafkaProducerApplication {
 
     private final KafkaTemplate<String, String> kafkaTemplate;
     private final Faker faker;
@@ -23,13 +23,13 @@ public class KafkaUserProducerApplication {
     @Value("${producer.topic.name:default-topic}")
     private String topicName;
 
-    public KafkaUserProducerApplication(KafkaTemplate<String, String> kafkaTemplate) {
+    public KafkaProducerApplication(KafkaTemplate<String, String> kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;
         this.faker = new Faker(new Locale("en"));
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(KafkaUserProducerApplication.class, args);
+        SpringApplication.run(KafkaProducerApplication.class, args);
     }
 
     @Scheduled(fixedDelayString = "${producer.interval.seconds:10}000")
