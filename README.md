@@ -1,6 +1,6 @@
 # Sample spring boot apps
 
-This repo containstow sample apps:
+This repo contains two sample apps:
 
 * producer
 * consumer
