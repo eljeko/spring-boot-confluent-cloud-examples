@@ -1,7 +1,9 @@
  
 # Configure the app
 
-copy the file `config/application_template.properties` as `config/application.properties`
+copy the file `config/application_cc_template.properties` as `config/application.properties`
+
+If you want to run on local instace (docker) you can use/copy the `application_cc_template.properties`
 
 Properly configure the file with your:
 
