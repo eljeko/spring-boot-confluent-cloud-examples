@@ -5,4 +5,6 @@ This repo contains two sample apps:
 * producer
 * consumer
 
-The app are samples to shows how to use spring-boot with Confluent Cloud Clusters, there is a basic configuration that shows how to configure authentication.# spring-boot-confluent-cloud-examples
+The apps are samples to show how to use spring-boot with Confluent Cloud Clusters.
+
+There is a basic configuration that shows how to setup authentication.
